@@ -1,0 +1,5 @@
+Supplier,Spend,OnTime,Region,BackupSupplier
+Alpha,100000,88,Asia,No
+Beta,50000,97,US,Yes
+Gamma,80000,82,Europe,No
+Delta,30000,94,US,Yes
