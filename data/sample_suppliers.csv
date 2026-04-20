@@ -1,5 +1,5 @@
-Supplier,Spend,OnTime,Region,BackupSupplier,Certified
-Alpha,100000,88,Asia,No,No
-Beta,50000,97,US,Yes,Yes
-Gamma,80000,82,Europe,No,Yes
-Delta,30000,94,US,Yes,No
+Supplier Name,Category,Annual Spend,On-Time Delivery %,Defect Rate %,Lead Time (days),Region,Backup Supplier Available?,Sustainability Certification?,Recycled / Ethical Material Indicator?
+Alpha,Electronics,100000,88,2.5,21,Offshore Stable,No,No,Yes
+Beta,Electronics,50000,97,0.8,10,Domestic,Yes,Yes,Yes
+Gamma,Packaging,80000,82,4.1,35,Offshore Higher Risk,No,No,No
+Delta,Packaging,30000,94,1.2,8,Nearshore,Yes,Yes,No
