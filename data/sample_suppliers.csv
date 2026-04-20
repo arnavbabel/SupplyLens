@@ -1,6 +1,5 @@
-Supplier,Spend,OnTime,Region,BackupSupplier
-Alpha,100000,88,Asia,No
-Beta,50000,97,US,Yes
-Gamma,80000,82,Europe,No
-Delta,30000,94,US,Yes
-Epsilon,200000,65,Asia,No
+Supplier,Spend,OnTime,Region,BackupSupplier,Certified
+Alpha,100000,88,Asia,No,No
+Beta,50000,97,US,Yes,Yes
+Gamma,80000,82,Europe,No,Yes
+Delta,30000,94,US,Yes,No
