@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("AI_API_KEY"), base_url="https://api.groq.com/openai/v1")
 
 
 def generate_brief(summary):
@@ -36,7 +36,7 @@ Low Sustainability:
 """
 
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=os.getenv("AI_MODEL"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2
     )
@@ -61,7 +61,7 @@ Give 3–4 bullet points.
 """
 
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=os.getenv("AI_MODEL"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2
     )
@@ -86,7 +86,7 @@ Keep it short.
 """
 
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=os.getenv("AI_MODEL"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0.2
     )
