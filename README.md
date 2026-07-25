@@ -424,17 +424,3 @@ This project strengthened experience in:
 This project is licensed under the MIT License.
 
 ---
-
-# Author
-
-**Arnav Babel**
-
-Supply Chain Management & Sustainability Student
-
-GitHub: https://github.com/arnavbabel
-
----
-
-## Acknowledgments
-
-Special thanks to the open-source Python community, Streamlit, Groq, and the OpenAI SDK for providing the tools that made this project possible.
