@@ -10,9 +10,17 @@
 
 ---
 
+## Live Demo
+
+🔗 **Application:** <https://supplylens-ctoxjbxiqzgsqdptvh96zg.streamlit.app/>
+
+---
+
 ## Overview
 
 SupplyLens is an analytics platform designed to help procurement professionals identify supplier risks before they become supply chain disruptions.
+
+It is intended for sourcing, procurement, and supply chain professionals who need a fast, explainable way to evaluate supplier performance and make data-driven sourcing decisions.
 
 The application combines deterministic procurement analytics with generative AI to transform supplier data into actionable business insights.
 
@@ -26,6 +34,17 @@ This project was built to demonstrate skills in:
 - Data Visualization
 - AI Integration
 - Business Intelligence Dashboards
+
+---
+
+## Key Capabilities
+
+- Supplier Risk Assessment
+- Sustainability Scoring
+- Category HHI & Supplier Concentration Analysis
+- AI-Assisted Procurement Copilot
+- Rule-Based Procurement Recommendations
+- Interactive Spend Analytics
 
 ---
 
@@ -75,11 +94,11 @@ Calculates a weighted sustainability score using:
 
 ---
 
-### Executive Dashboard
+### Procurement Dashboard
 
 Interactive dashboard including:
 
-- Executive Snapshot
+- Procurement Overview
 - Key Insights
 - Critical Risk Suppliers
 - Sustainability Watchlist
@@ -111,20 +130,14 @@ The AI assists with:
 - Supplier Explanations
 - Procurement Scenario Analysis
 
-**Important:**
-
-AI **does not calculate supplier risk**.
-
-All risk scores remain deterministic and fully explainable.
+> **Important:** All supplier scores are calculated using deterministic procurement models. AI is used exclusively to summarize, explain, and interpret the results—it never calculates supplier risk or makes procurement decisions.
 
 ---
 
-# Dashboard
-
-*(Replace with screenshots after deployment.)*
+## Dashboard
 
 ```
-Executive Snapshot
+Procurement Overview
 
 +------------------+------------------+------------------+------------------+
 | Avg Risk Score   | Avg Sustainability| High Risk %      | Avg Category HHI |
@@ -145,7 +158,7 @@ Spend by Supplier
 
 ---
 
-# How It Works
+## How It Works
 
 ```mermaid
 flowchart LR
@@ -155,7 +168,7 @@ B[Risk Model]
 C[Sustainability Model]
 D[Concentration Analysis]
 E[Recommendations]
-F[Executive Dashboard]
+F[Procurement Dashboard]
 G[AI Copilot]
 
 A --> B
@@ -172,7 +185,7 @@ F --> G
 
 ---
 
-# Risk Scoring Methodology
+## Risk Scoring Methodology
 
 Overall supplier risk is calculated using weighted procurement metrics.
 
@@ -195,7 +208,7 @@ Example delivery scoring:
 
 ---
 
-# Concentration Analysis
+## Concentration Analysis
 
 Supplier dependency is measured using two approaches.
 
@@ -234,7 +247,7 @@ Interpretation:
 
 ---
 
-# Sustainability Methodology
+## Sustainability Methodology
 
 Weighted sustainability model.
 
@@ -247,22 +260,7 @@ Weighted sustainability model.
 
 ---
 
-# AI Copilot
-
-SupplyLens integrates the Groq API using the OpenAI Python SDK.
-
-The AI provides:
-
-- Executive summaries
-- Supplier explanations
-- Business recommendations
-- Procurement scenario analysis
-
-All analytical calculations remain deterministic.
-
----
-
-# Technology Stack
+## Technology Stack
 
 | Category | Technology |
 |-----------|------------|
@@ -276,7 +274,7 @@ All analytical calculations remain deterministic.
 
 ---
 
-# Installation
+## Installation
 
 Clone the repository.
 
@@ -312,7 +310,7 @@ pip install -r requirements.txt
 
 ---
 
-# Environment Variables
+## Environment Variables
 
 Create a `.env` file.
 
@@ -326,29 +324,17 @@ AI_MODEL=llama-3.3-70b-versatile
 
 ---
 
-# Running the Application
+## Running the Application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will launch locally in your browser.
+After launching the application, upload `data/sample_suppliers.csv` to explore the dashboard with the included example dataset.
 
 ---
 
-# Deployment
-
-SupplyLens is designed for deployment on **Streamlit Community Cloud**.
-
-Deployment requires:
-
-- GitHub repository
-- Streamlit Community Cloud account
-- Groq API key stored in Streamlit Secrets
-
----
-
-# Example CSV Schema
+## Example CSV Schema
 
 | Column |
 |---------|
@@ -363,11 +349,13 @@ Deployment requires:
 | Sustainability Certification? |
 | Recycled / Ethical Material Indicator? |
 
+> **Sample Data:** The repository includes `data/sample_suppliers.csv`, allowing the dashboard to be explored immediately without creating a custom dataset.
+
 ---
 
-# Project Structure
+## Project Structure
 
-```
+```text
 SupplyLens
 │
 ├── app.py
@@ -390,37 +378,6 @@ SupplyLens
 
 ---
 
-# Future Improvements
-
-- Interactive weight customization
-- Historical supplier performance tracking
-- PDF executive reports
-- Supplier benchmarking
-- Multi-file uploads
-- ERP integration
-- Predictive supplier risk forecasting
-- Carbon emissions estimation
-- Power BI integration
-- Authentication and user accounts
-
----
-
-# Lessons Learned
-
-This project strengthened experience in:
-
-- Building production-ready Python applications
-- Designing procurement analytics models
-- Working with structured business data
-- Integrating LLM APIs into existing software
-- Creating interactive dashboards using Streamlit
-- Applying Git and GitHub workflows
-- Designing explainable AI systems
-
----
-
-# License
+## License
 
 This project is licensed under the MIT License.
-
----
